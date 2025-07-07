@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: rgb(29, 106, 54);
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .scrolling-container {
+      height: 950px;
+    }
+
+    .category {
+      margin-bottom: 20px;
+    }
+
+    .box {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      background-color: rgb(162, 222, 146);
+      margin: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color, color 0.3s, 0.3s;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box:hover {
+      background-color: rgb(52, 195, 109);
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .box-text {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #333;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .box-text1 {
+      top: 40%;
+    }
+  </style>
+  <title>Recyclable Rates</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Recyclable Rates</h1>
+  </div>
+
+  <div class="content">
+    <div class="scrolling-container">
+      <div class="category">
+        <h2>General Items</h2>
+        <div class="box">
+          <div class="box-text">(Rs.16/kg)</div>
+          <div class="box-text box-text1"><b>Paper</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.7/kg)</div>
+          <div class="box-text box-text1"><b>Cardboard</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.10/kg)</div>
+          <div class="box-text box-text1"><b>Plactic</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.27/kg)</div>
+          <div class="box-text box-text1"><b>Iron</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.TBA/kg)</div>
+          <div class="box-text box-text1"><b>Glass</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.105/kg)</div>
+          <div class="box-text box-text1"><b>Aluminium</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.37/kg)</div>
+          <div class="box-text box-text1"><b>Steel</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.425/kg)</div>
+          <div class="box-text box-text1"><b>Copper</b></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <h2>Medical Waste</h2>
+        <div class="box">
+          <div class="box-text">(Rs.TBA/kg)</div>
+          <div class="box-text box-text1"><b>Blister packs</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.10/kg)</div>
+          <div class="box-text box-text1"><b>Plastic bottle</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.TBA/kg)</div>
+          <div class="box-text box-text1"><b>Glass Bottle</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.TBA/kg)</div>
+          <div class="box-text box-text1"><b>Hospital Equipments</b></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <h2>Appliances</h2>
+        <div class="box">
+          <div class="box-text">(Rs.4000/kg)</div>
+          <div class="box-text box-text1"><b>Air Conditioner</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.600/kg)</div>
+          <div class="box-text box-text1"><b>Washing Machine</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.50/kg)</div>
+          <div class="box-text box-text1"><b>Geyser</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.1000/kg)</div>
+          <div class="box-text box-text1"><b>Refrigerator</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.20/kg)</div>
+          <div class="box-text box-text1"><b>Cooler</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.150/kg)</div>
+          <div class="box-text box-text1"><b>Television</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.200/kg)</div>
+          <div class="box-text box-text1"><b>Microwave</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Negotiable)</div>
+          <div class="box-text box-text1"><b>Other Electronics</b></div>
+        </div>
+      </div>
+
+      <div class="category">
+        <h2>Automobile</h2>
+        <div class="box">
+          <div class="box-text">(Rs.2000/kg)</div>
+          <div class="box-text box-text1"><b>Car</b></div>
+        </div>
+        <div class="box">
+          <div class="box-text">(Rs.2100/kg)</div>
+          <div class="box-text box-text1"><b>Bike</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

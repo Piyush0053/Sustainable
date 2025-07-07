@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Recycling!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #009688;
+        }
+
+        h2 {
+            color: #673ab7;
+        }
+
+        p {
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        #color-palette {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .color-box {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .color-box:hover {
+            transform: scale(1.2);
+        }
+
+        .color-box:hover::after {
+            content: attr(title);
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            white-space: nowrap;
+        }
+
+        .color-box:hover::after {
+            opacity: 1;
+        }
+
+        #btn-container {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #009688;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00796b;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Thank You for Recycling!</h1>
+        <h2>Your commitment makes a world of difference.</h2>
+        <p>Your dedication to recycling contributes to a healthier, greener planet. Every small effort counts, and we
+            appreciate your role in creating a sustainable future.</p>
+
+        <div id="color-palette">
+            <div class="color-box" style="background-color: #4caf50;" title="Green: A Symphony of Sustainability"></div>
+            <div class="color-box" style="background-color: #2196f3;" title="Blue: Oceans of Appreciation"></div>
+            <div class="color-box" style="background-color: #ffeb3b;" title="Yellow: Radiant Energy of Reuse"></div>
+            <div class="color-box" style="background-color: #9c27b0;" title="Purple: Transforming Waste into Art"></div>
+            <div class="color-box" style="background-color: #ff9800;"
+                title="Orange: The Warmth of Environmental Stewardship"></div>
+        </div>
+
+        <div id="btn-container">
+            <button><a href="index.html" style="text-decoration:none">Continue Recycling</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
